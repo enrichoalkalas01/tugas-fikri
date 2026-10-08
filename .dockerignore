@@ -1,0 +1,7 @@
+.git
+.gitattributes
+README.md
+Dockerfile
+.dockerignore
+storage/*.sqlite
+storage/*.sqlite-*

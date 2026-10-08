@@ -1,0 +1,3 @@
+<?php if (!isset($rootUrl)) require dirname(__DIR__) . '/app/bootstrap.php'; ?>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="EAD Stay — a thoughtfully designed hotel booking portfolio demo."><title><?= e($title ?? 'EAD Stay — A little less ordinary') ?></title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/css/site.css"><script src="../assets/js/hotel.js" defer></script></head><body class="hotel"><a class="skip" href="#main">Skip to content</a><div class="demo-strip"><span>A hospitality concept. A real working demo.</span><a href="../index.html">← Back to showcase</a></div>
+<?php include __DIR__.'/navigation.php'; ?>

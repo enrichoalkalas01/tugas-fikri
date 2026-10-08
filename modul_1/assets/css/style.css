@@ -1,0 +1,141 @@
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+a:hover {
+	text-decoration: none;
+	color: unset;
+}
+
+#navbar {
+	max-width: 100%;
+	max-height: 100%;
+	position: relative;
+}
+
+#navbar .box-content .content {
+	display: flex;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #343a40;
+}
+
+#navbar .box-content .content .logo-box {
+	max-width: 25%;
+	padding: 0 2.5%;
+}
+
+#navbar .box-content .content .menu-box {
+	position: relative;
+	padding: 0 2.5%;
+}
+
+#navbar .box-content .content .menu-box ul {
+	height: 100%;
+	padding: 0;
+	list-style: none;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#navbar .box-content .content .menu-box ul li {
+	margin: 15px;
+}
+
+#navbar .box-content .content .menu-box ul li a:hover {
+	transition: .5s;
+	color: #dedede;
+}
+
+#homepages.main-content {
+	width: auto;
+	height: calc(100vh - 100px);
+}
+
+#homepages.main-content .box-content {
+	height: 100%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#homepages.main-content .box-content .video-content {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #dedede;
+}
+
+#homepages.main-content .box-content .video-content iframe {
+	width: 100%;
+	height: calc(100% - 25%);
+	border: none;
+}
+
+#homepages.main-content .box-content .form-box {
+	padding: 2.5% 5%;
+}
+
+#homepages.main-content .box-content .form-box .form-group {
+	/*display: flex;*/
+}
+
+#homepages.main-content .box-content .form-box h4 {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+#profile {
+	padding: 2.5% 0;
+}
+
+#profile .box-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#profile .logo {
+	background-color: #dedede;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+#profile .logo-box {
+	max-width: 25%;
+}
+
+#profile .description {
+	padding: 2.5% 5%;
+	border: 1px solid #dedede;
+}
+
+#products .box-content {
+	text-align: center;
+	padding: 5% 0;
+}
+
+#products .box-content h1 {
+	text-align: center;
+}
+
+#products table {
+	padding: 0;
+}
+
+#products table tr td {
+	padding: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,7 @@
+Options -Indexes
+DirectoryIndex index.html index.php
+<FilesMatch "(?i)\.(sqlite|sqlite3|db|log|md|yml|jsonl)$">
+Require all denied
+</FilesMatch>
+RewriteEngine On
+RewriteRule ^(?:app|storage)(?:/|$) - [F,L,NC]
