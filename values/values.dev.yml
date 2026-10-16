@@ -1,0 +1,81 @@
+# Project : tugas-fikri (DEV)
+# Pipeline: deployPipelineVaultEso (chart: generic-app-vault)
+appName: tugas-fikri-dev
+namespace: portofolio
+replicaCount: 1
+
+image:
+    repository: 192.168.20.21/other/tugas-fikri-dev
+    tag: "latest"
+    pullPolicy: Always
+
+imagePullSecrets:
+    - name: harbor-creds
+
+nameOverride: ""
+fullnameOverride: ""
+
+containerPort: 80
+
+service:
+    type: NodePort
+    port: 80
+    targetPort: 80
+    nodePort: 31176
+
+ingress:
+    enabled: false
+    className: nginx
+    annotations: {}
+    hosts: []
+    tls: []
+
+probe:
+    enabled: true
+    liveness:
+        path: /
+        port: 80
+    readiness:
+        path: /
+        port: 80
+
+resources:
+    requests:
+        cpu: 20m
+        memory: 64Mi
+    limits:
+        cpu: 300m
+        memory: 256Mi
+
+autoscaling:
+    enabled: false
+    minReplicas: 1
+    maxReplicas: 1
+    targetCPUUtilizationPercentage: 80
+    targetMemoryUtilizationPercentage: 80
+
+env: []
+
+vaultRuntime:
+    enabled: true
+    path: tugas-fikri-dev
+    dataFrom: true
+    storeName: vault-backend
+    storeKind: ClusterSecretStore
+    refreshInterval: 1m
+
+envFrom: []
+
+volumeMounts: []
+volumes: []
+hostAliases: []
+nodeSelector: {}
+tolerations: []
+affinity: {}
+podSecurityContext: {}
+securityContext: {}
+
+serviceAccount:
+    create: false
+    name: ""
+    annotations: {}
