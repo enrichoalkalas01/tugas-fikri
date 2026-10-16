@@ -4,7 +4,7 @@
 deployPipelineVaultEso(
     gitRepository: 'https://github.com/enrichoalkalas01/tugas-fikri.git',
     gitBranch: 'master',
-    gitCredentialsId: 'endlesscreative-credentials',
+    gitCredentialsId: 'github-credentials',
 
     registryUrl: '192.168.20.21',
     registryCredentialsId: 'harbor-credentials',
