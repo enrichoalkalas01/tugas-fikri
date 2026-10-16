@@ -1,7 +1,12 @@
 .git
 .gitattributes
+.gitignore
 README.md
+ASSETS.md
 Dockerfile
 .dockerignore
+docker-compose.yml
+Jenkinsfile*
+values
 storage/*.sqlite
 storage/*.sqlite-*
