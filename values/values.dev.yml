@@ -1,11 +1,11 @@
 # Project : tugas-fikri (DEV)
 # Pipeline: deployPipelineVaultEso (chart: generic-app-vault)
-appName: tugas-fikri-dev
+appName: tugas-fikri
 namespace: portofolio
 replicaCount: 1
 
 image:
-    repository: 192.168.20.21/other/tugas-fikri-dev
+    repository: 192.168.20.21/other/tugas-fikri
     tag: "latest"
     pullPolicy: Always
 
@@ -58,7 +58,7 @@ env: []
 
 vaultRuntime:
     enabled: true
-    path: tugas-fikri-dev
+    path: tugas-fikri
     dataFrom: true
     storeName: vault-backend
     storeKind: ClusterSecretStore
